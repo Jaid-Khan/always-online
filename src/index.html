@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Always Online</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-white text-2xl font-bold">Always Online</a>
+            </div>
+            <div>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Our Services</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">About Us</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Contact Us</a></li>
+                </ul>
+                <button class="md:hidden text-white" id="menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <ul class="md:hidden bg-blue-500 text-white space-y-4 p-4 w-full hidden" id="mobile-menu">
+        <li><a href="#" class="block hover:text-gray-300 my-4">Home</a></li>
+        <li><a href="#" class="block hover:text-gray-300 my-4">Our Services</a></li>
+        <li><a href="#" class="block hover:text-gray-300 my-4">About Us</a></li>
+        <li><a href="#" class="block hover:text-gray-300 my-4">Contact Us</a></li>
+    </ul>
+
+    <!-- Full-Screen Hero Section -->
+    <section class="container mx-auto px-6 h-screen grid md:grid-cols-2 gap-8 items-center">
+        <div>
+            <h1 class="text-6xl font-bold text-blue-600">Always Online</h1>
+            <p class="text-xl text-gray-600 mt-4">Get your work done easily</p>
+            <a href="https://wa.me/" target="_blank"
+                class="mt-6 inline-flex items-center space-x-3 bg-green-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-green-600 transition">
+                <img src="assets/icons/icons8-whatsapp-480.png" class="w-7 h-7 " alt="">
+                <span class="text-lg">Connect Us</span>
+            </a>
+        </div>
+        <div>
+            <img src="assets/img/HERO-PNG.png" alt="Hero Image"
+                class="w-full h-full object-cover rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
