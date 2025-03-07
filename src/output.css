@@ -575,6 +575,9 @@
   .sticky {
     position: sticky;
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .end-1 {
     inset-inline-end: calc(var(--spacing) * 1);
   }
@@ -854,11 +857,17 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-68 {
+    width: calc(var(--spacing) * 68);
   }
   .w-full {
     width: 100%;
@@ -2105,6 +2114,15 @@
   }
   .scheme-only-light {
     color-scheme: only light;
+  }
+  .opacity-40 {
+    opacity: 40%;
+  }
+  .mix-blend-multiply {
+    mix-blend-mode: multiply;
+  }
+  .mix-blend-overlay {
+    mix-blend-mode: overlay;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
