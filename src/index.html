@@ -1,162 +1,242 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Always Online - Cyber Cafe Services</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" /> -->
-    <link rel="stylesheet" href="output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Always Online - Cyber Cafe Services</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" /> -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeIn 1s ease-out forwards;
-      }
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body class="bg-gradient-to-r from-blue-800 to-black text-white">
-    <!-- Responsive Navbar -->
-    <header class="flex w-full items-center justify-between px-4 py-4 shadow-md md:px-12">
-      <!-- Logo -->
-      <a href="#home" class="text-white flex items-center gap-2 text-2xl font-bold transition duration-300">
-        <!-- Home Icon -->
-          <path d="M10.707 1.293a1 1 0 00-1.414 0l-7 7A1 1 0 003 9h1v7a2 2 0 002 2h2a1 1 0 001-1v-4h2v4a1 1 0 001 1h2a2 2 0 002-2V9h1a1 1 0 00.707-1.707l-7-7z" />
-        </svg>
-        Always Online
-      </a>
+<body class="bg-gradient-to-r from-blue-800 to-black text-white">
+  <!-- Responsive Navbar -->
+  <header class="flex w-full items-center justify-between px-4 py-4 shadow-md md:px-12">
+    <!-- Logo -->
+    <a href="./index.html" class="text-white flex items-center gap-2 text-2xl font-bold transition duration-300">
+      <!-- Home Icon -->
+      <path
+        d="M10.707 1.293a1 1 0 00-1.414 0l-7 7A1 1 0 003 9h1v7a2 2 0 002 2h2a1 1 0 001-1v-4h2v4a1 1 0 001 1h2a2 2 0 002-2V9h1a1 1 0 00.707-1.707l-7-7z" />
+      </svg>
+      Always Online
+    </a>
 
-      <!-- Desktop Menu -->
-      <nav class="hidden space-x-6 font-medium text-white md:flex">
-        <a href="#home" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Home</a>
-        <a href="#services" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
-        <a href="#about-us" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
-        <a href="#contact" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
-      </nav>
+    <!-- Desktop Menu -->
+    <nav class="hidden space-x-6 font-medium text-white md:flex">
+      <a href="#home" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Home</a>
+      <a href="#services" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
+      <a href="#about-us" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
+      <a href="#contact" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
+    </nav>
 
-      <!-- Hamburger Button (Mobile) -->
-      <button id="menu-btn" class="text-white focus:outline-none md:hidden">
-        <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </header>
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-btn" class="text-white focus:outline-none md:hidden">
+      <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
 
-    <!-- Mobile Nav Menu -->
-    <div id="mobile-menu" class="bg-gradient-to-r from-blue-800 to-black text-white text-center absolute top-16 left-0 z-40 hidden w-full h-full px-4 pt-2 pb-4 shadow-md md:hidden">
-      <a href="#home" class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Home</a>
-      <a href="#services" class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
-      <a href="#about-us" class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
-      <a href="#contact" class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-menu"
+    class="bg-gradient-to-r from-blue-800 to-black text-white text-center absolute top-16 left-0 z-40 hidden w-full h-full px-4 pt-2 pb-4 shadow-md md:hidden">
+    <a href="#home"
+      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Home</a>
+    <a href="#services"
+      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
+    <a href="#about-us"
+      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
+    <a href="#contact"
+      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
+  </div>
+
+  <!-- HERO SECTION  -->
+
+  <section id="home" class="fade-in flex flex-col items-center justify-center px-6 py-20 md:flex-row">
+    <img src="assets/img/logo.png" alt="Logo" class="mb-8 w-64 rounded-xl md:mr-12 md:mb-0 md:w-96" id="logo" />
+    <div class="text-center md:text-left">
+      <h2 class="mb-4 text-4xl font-bold text-cyan-200">Your One-Stop Digital Solution</h2>
+      <p class="mb-6 text-lg">Providing fast, reliable, and affordable cyber cafe services under one roof.</p>
+      <a href="https://wa.me/917000417423" target="_blank"
+        class="inline-block rounded-lg bg-blue-900 px-6 py-3 font-semibold text-white shadow transition-all hover:bg-white hover:text-blue-900">Connect
+        on WhatsApp</a>
     </div>
+  </section>
 
-    <!-- HERO SECTION  -->
+  <!-- OUR SERVICES SECTION  -->
 
-    <section id="home" class="fade-in flex flex-col items-center justify-center px-6 py-20 md:flex-row">
-      <img src="assets/img/always-online-logo-png.png" alt="Logo" class="mb-8 w-64 rounded-xl shadow-xl md:mr-12 md:mb-0 md:w-96" />
-      <div class="text-center md:text-left">
-        <h2 class="mb-4 text-4xl font-bold text-cyan-200">Your One-Stop Digital Solution</h2>
-        <p class="mb-6 text-lg">Providing fast, reliable, and affordable cyber cafe services under one roof.</p>
-        <a href="https://wa.me/917000417423" target="_blank" class="inline-block rounded-lg bg-blue-900 px-6 py-3 font-semibold text-white shadow transition-all hover:bg-white hover:text-blue-900">Connect on WhatsApp</a>
+  <section id="services" class="fade-in px-6 py-10">
+    <h2 class="mb-8 text-center text-3xl font-semibold text-cyan-200">Our Services</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=160&id=122837&format=png" alt="Online Form Filling"
+          class="mx-auto mb-4 h-20" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Online Form Filling</h3>
+        <p class="text-center text-sm text-gray-400">Assistance with filling out various government and private sector
+          forms.</p>
       </div>
-    </section>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920322.png" alt="Certificate Making"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Certificate Making</h3>
+        <p class="text-center text-sm text-gray-400">Custom certificates for education, achievement, ID cards, and more.
+        </p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=n9P6681cdRgv&format=png" alt="Printing Services"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Printing & Scanning</h3>
+        <p class="text-center text-sm text-gray-400">High-quality printing and scanning for documents, photos, and IDs.
+        </p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=uezOhfHCC6gG&format=png" alt="Income, Domicile, Caste Certificat"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Income, Domicile, Caste Certificate</h3>
+        <p class="text-center text-sm text-gray-400">Get official documents like Caste, Domicile, and Income
+          Certificates quickly and reliably.</p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006542.png" alt="Government Exam Help"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Exam & Admit Card Help</h3>
+        <p class="text-center text-sm text-gray-400">Apply for government exams, download admit cards, and more.</p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=pdKhKfJIXNJy&format=png" alt="PAN Card Services"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">PAN & Voter ID Card Services</h3>
+        <p class="text-center text-sm text-gray-400">PAN Card and Voter ID services available with fast processing.</p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=rEUVwsj9R7SJ&format=png" alt="Money Withdrawal"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Money Withdrawal</h3>
+        <p class="text-center text-sm text-gray-400">Instant cash withdrawal services available from all banks.</p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=120&id=ydflV0J4pWsq&format=png" alt="Resume Creation"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Resume Creation</h3>
+        <p class="text-center text-sm text-gray-400">Professional resume and bio-data design tailored for job seekers.
+        </p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=MEwb2lHaMFxX&format=png" alt="Electricity Bill"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Electricity Bill Payment</h3>
+        <p class="text-center text-sm text-gray-400">Pay your electricity bill in seconds — safe, easy, and fast!</p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=KFLuQn5NDwSw&format=png" alt="Bhulekh" class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Bhulekh</h3>
+        <p class="text-center text-sm text-gray-400">Get instant access to Bhulekh, Khasra-Khatauni, Patta, and other
+          land record services.</p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://img.icons8.com/?size=96&id=13677&format=png" alt="Photo Editing" class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Photo Editing</h3>
+        <p class="text-center text-sm text-gray-400">Basic editing for official documents, ID cards, and certificates.
+        </p>
+      </div>
+      <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
+        <img src="https://cdn-icons-png.flaticon.com/512/1570/1570200.png" alt="Internet Browsing"
+          class="mx-auto mb-4 h-16" />
+        <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Internet Browsing</h3>
+        <p class="text-center text-sm text-gray-400">Browse the internet safely and quickly with our secure systems.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- OUR SERVICES SECTION  -->
+  <!-- About Us  -->
+   <section id="about-us" class="w-full py-20 px-4 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 text-center text-cyan-300">About Us</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Image -->
+      <img src="assets/img/personal-computer.png" alt="Cyber Cafe Setup" class="w-full h-auto rounded-xl transition-transform duration-500 hover:scale-105" id="about-us-logo">
 
-    <section id="services" class="fade-in px-6 py-10">
-      <h2 class="mb-8 text-center text-3xl font-semibold text-cyan-200">Our Services</h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=160&id=122837&format=png" alt="Online Form Filling" class="mx-auto mb-4 h-20" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Online Form Filling</h3>
-          <p class="text-center text-sm text-gray-400">Assistance with filling out various government and private sector forms.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://cdn-icons-png.flaticon.com/512/2920/2920322.png" alt="Certificate Making" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Certificate Making</h3>
-          <p class="text-center text-sm text-gray-400">Custom certificates for education, achievement, ID cards, and more.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=n9P6681cdRgv&format=png" alt="Printing Services" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Printing & Scanning</h3>
-          <p class="text-center text-sm text-gray-400">High-quality printing and scanning for documents, photos, and IDs.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://cdn-icons-png.flaticon.com/512/1570/1570200.png" alt="Internet Browsing" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Internet Browsing</h3>
-          <p class="text-center text-sm text-gray-400">Browse the internet safely and quickly with our secure systems.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=13677&format=png" alt="Photo Editing" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Photo Editing</h3>
-          <p class="text-center text-sm text-gray-400">Basic editing for official documents, ID cards, and certificates.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://cdn-icons-png.flaticon.com/512/1006/1006542.png" alt="Government Exam Help" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Exam & Admit Card Help</h3>
-          <p class="text-center text-sm text-gray-400">Apply for government exams, download admit cards, and more.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=pdKhKfJIXNJy&format=png" alt="PAN Card Services" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">PAN Card Services</h3>
-          <p class="text-center text-sm text-gray-400">Apply and manage your PAN card easily with our support.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=rEUVwsj9R7SJ&format=png" alt="Money Withdrawal" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Money Withdrawal</h3>
-          <p class="text-center text-sm text-gray-400">Instant cash withdrawal services available from all banks.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=120&id=ydflV0J4pWsq&format=png" alt="Resume Creation" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Resume Creation</h3>
-          <p class="text-center text-sm text-gray-400">Professional resume and bio-data design tailored for job seekers.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=MEwb2lHaMFxX&format=png" alt="Electricity Bill" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Electricity Bill Payment</h3>
-          <p class="text-center text-sm text-gray-400">Pay your electricity bill in seconds — safe, easy, and fast!</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=KFLuQn5NDwSw&format=png" alt="Bhulekh" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Bhulekh</h3>
-          <p class="text-center text-sm text-gray-400">Get instant access to Bhulekh, Khasra-Khatauni, Patta, and other land record services.</p>
-        </div>
-        <div class="rounded-2xl bg-gray-800 p-6 shadow-lg transition duration-300 hover:shadow-cyan-400/50">
-          <img src="https://img.icons8.com/?size=96&id=uezOhfHCC6gG&format=png" alt="Income, Domicile, Caste Certificat" class="mx-auto mb-4 h-16" />
-          <h3 class="mb-2 text-center text-xl font-bold text-cyan-200">Income, Domicile, Caste Certificate</h3>
-          <p class="text-center text-sm text-gray-400">Get official documents like Caste, Domicile, and Income Certificates quickly and reliably.</p>
+      <!-- Text Content -->
+      <div>
+        <p class="text-lg leading-relaxed mb-4">
+          <strong>Always Online</strong> is your trusted cyber café and digital service center located in the heart of your neighborhood. We offer a wide range of services including printing, scanning, online form filling, exam registrations, ticket bookings, and more — all under one roof.
+        </p>
+        <p class="text-lg leading-relaxed mb-4">
+          Our mission is to make digital access easy, fast, and affordable for everyone. Whether you're applying for a PAN card, printing important documents, or browsing the internet, we ensure smooth services and friendly support.
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          We believe in staying <strong>Always Online</strong> — not just in name, but in action. Visit us today to experience the most reliable, customer-friendly digital café in town.
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex items-center gap-6 mt-4">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/share/16iA9w17Ri/" target="_blank" class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-2xl">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/_mr.perfect20/" target="_blank" class="text-pink-500 hover:text-pink-700 transition-all duration-300 text-2xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="https://wa.me/917000417423" target="_blank" class="text-green-500 hover:text-green-700 transition-all duration-300 text-2xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="fade-in bg-gray-900 px-6 py-10" id="contact">
-      <h2 class="mb-6 text-center text-3xl font-semibold text-cyan-300">Get in Touch</h2>
-      <form action="https://formsubmit.co/your-email@example.com" method="POST" class="mx-auto max-w-xl space-y-4">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full rounded bg-gray-800 p-3 text-white placeholder-gray-400" />
-        <input type="email" name="email" placeholder="Your Email" required class="w-full rounded bg-gray-800 p-3 text-white placeholder-gray-400" />
-        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full rounded bg-gray-800 p-3 text-white placeholder-gray-400"></textarea>
-        <button type="submit" class="w-full rounded bg-cyan-700 py-3 font-bold text-white transition duration-300 hover:bg-cyan-900">Send Message</button>
-      </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="fade-in bg-gray-950 py-6 text-center text-sm text-gray-500">&copy; 2025 Always Online Cyber Cafe. All rights reserved.</footer>
+    </div>
+  </div>
+</section>
 
 
-    <!-- Script to toggle mobile menu -->
-<script src="script.js"></script>
-  </body>
+  <!-- Contact Form -->
+  <section class="fade-in bg-gray-900 px-6 py-10" id="contact">
+    <h2 class="mb-6 text-center text-3xl font-semibold text-cyan-300">Get in Touch</h2>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST" class="mx-auto max-w-xl space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full rounded bg-gray-800 p-3 text-white placeholder-gray-400 outline-cyan-300" />
+      <input type="email" name="email" placeholder="Your Email" required
+        class="w-full rounded bg-gray-800 p-3 text-white placeholder-gray-400 outline-cyan-300" />
+      <textarea name="message" rows="5" placeholder="Your Message" required
+        class="w-full rounded bg-gray-800 p-3 text-white placeholder-gray-400 outline-cyan-300"></textarea>
+      <button type="submit"
+        class="w-full rounded bg-cyan-700 py-3 font-bold text-white transition duration-300 hover:bg-cyan-900">Send
+        Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="fade-in bg-gray-950 py-6 text-center text-sm text-gray-500">&copy; 2025 Always Online. All rights
+    reserved. Desgined and Developed by Jaid Khan</footer>
+
+
+  <!-- Script to toggle mobile menu -->
+  <script src="script.js"></script>
+</body>
+
 </html>

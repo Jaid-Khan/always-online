@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+#logo{
+    filter: drop-shadow(40px 20px 10px rgba(0, 0, 0, 0.5));
+}
+
+#about-us-logo{
+    filter: drop-shadow(40px 20px 10px rgba(0, 0, 0, 0.5));
+
+}
