@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Always Online - Cyber Cafe Services</title>
+  <link rel="icon" href="/src/assets/img/logo.png">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" /> -->
   <link rel="stylesheet" href="output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +34,7 @@
 
 <body class="bg-gradient-to-r from-blue-800 to-black text-white">
   <!-- Responsive Navbar -->
-  <header class="flex w-full items-center justify-between px-4 py-4 shadow-md md:px-12">
+  <header class="flex w-full items-center justify-between px-4 py-3 shadow-md md:px-12">
     <!-- Logo -->
     <a href="./index.html" class="text-white flex items-center gap-2 text-2xl font-bold transition duration-300">
       <!-- Home Icon -->
@@ -45,8 +46,8 @@
 
     <!-- Desktop Menu -->
     <nav class="hidden space-x-6 font-medium text-white md:flex">
-      <a href="#home" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Home</a>
       <a href="#services" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
+      <a href="#links" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Links</a>
       <a href="#about-us" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
       <a href="#contact" class="transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
     </nav>
@@ -62,15 +63,15 @@
 
   <!-- Mobile Nav Menu -->
   <div id="mobile-menu"
-    class="bg-gradient-to-r from-blue-800 to-black text-white text-center absolute top-16 left-0 z-40 hidden w-full h-full px-4 pt-2 pb-4 shadow-md md:hidden">
-    <a href="#home"
-      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Home</a>
+    class="bg-gradient-to-r from-blue-800 to-black text-white text-center absolute top-16 left-0 z-40 hidden w-full h-full px-4 pt-4 pb-4 shadow-md md:hidden">
     <a href="#services"
-      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
+      class="block py-4 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Services</a>
+    <a href="#links"
+      class="block py-4 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">links</a>
     <a href="#about-us"
-      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
+      class="block py-4 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">About</a>
     <a href="#contact"
-      class="block py-2 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
+      class="block py-4 transition duration-300 hover:text-blue-900 hover:bg-white p-2 rounded-xl">Contact</a>
   </div>
 
   <!-- HERO SECTION  -->
@@ -172,104 +173,117 @@
   </section>
 
   <!-- Important Links  -->
-   <section class="bg py-8 px-4 md:px-8 shadow-md rounded-xl">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold text-cyan-300 mb-8">
-      Important Links
-    </h2>
-    <div class="space-y-4 text-left">
-      <!-- Link 1 -->
-      <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
-        <span class="text-cyan-300 font-semibold">Download Aadhar</span>
-        <a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en" target="_blank" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
-          Click Here
-        </a>
-      </div>
-
-      <!-- Link 2 -->
-      <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
-        <span class="text-cyan-300 font-semibold">Check Aadhar Validity</span>
-        <a href="https://myaadhaar.uidai.gov.in/check-aadhaar-validity/en" target="_blank" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
-          Click Here
-        </a>
-      </div>
-
-      <!-- Link 3 -->
-      <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
-        <span class="text-cyan-300 font-semibold">Download Samagra Parivar Card</span>
-        <a href="https://samagra.gov.in/Public/Dashboard/SamagraProfile.aspx?fw=sf" target="_blank" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
-          Click Here
-        </a>
-      </div>
-
-      <!-- Link 4 -->
-      <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
-        <span class="text-cyan-300 font-semibold">Check Domicile Status</span>
-        <a href="#" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
-          Click Here
-        </a>
-      </div>
-
-      <!-- Link 5 -->
-      <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
-        <span class="text-cyan-300 font-semibold">Income Certificate Download</span>
-        <a href="#" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
-          Click Here
-        </a>
-      </div>
-    </div>
-
-    <!-- More Links Button -->
-    <div class="mt-6">
-      <a href="./all-links.html" class="inline-block bg-cyan-300 text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-blue-900 hover:text-cyan-300 transition">
-        More Links →
-      </a>
-    </div>
-  </div>
-</section>
-
-
-  <!-- About Us  -->
-   <section id="about-us" class="w-full py-20 px-4 md:px-12">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-4xl font-bold mb-6 text-center text-cyan-300">About Us</h2>
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <!-- Image -->
-      <img src="assets/img/personal-computer.png" alt="Cyber Cafe Setup" class="w-full h-auto rounded-xl transition-transform duration-500 hover:scale-105" id="about-us-logo">
-
-      <!-- Text Content -->
-      <div>
-        <p class="text-lg leading-relaxed mb-4">
-          <strong>Always Online</strong> is your trusted cyber café and digital service center located in the heart of your neighborhood. We offer a wide range of services including printing, scanning, online form filling, exam registrations, ticket bookings, and more — all under one roof.
-        </p>
-        <p class="text-lg leading-relaxed mb-4">
-          Our mission is to make digital access easy, fast, and affordable for everyone. Whether you're applying for a PAN card, printing important documents, or browsing the internet, we ensure smooth services and friendly support.
-        </p>
-        <p class="text-lg leading-relaxed mb-6">
-          We believe in staying <strong>Always Online</strong> — not just in name, but in action. Visit us today to experience the most reliable, customer-friendly digital café in town.
-        </p>
-
-        <!-- Social Links -->
-        <div class="flex items-center gap-6 mt-4">
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/share/16iA9w17Ri/" target="_blank" class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-2xl">
-            <i class="fab fa-facebook-square"></i>
+  <section class="bg py-8 px-4 md:px-8 shadow-md rounded-xl" id="links">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-cyan-300 mb-8">
+        Important Links
+      </h2>
+      <div class="space-y-4 text-left">
+        <!-- Link 1 -->
+        <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
+          <span class="text-cyan-300 font-semibold">Download Aadhar</span>
+          <a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en" target="_blank"
+            class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
+            Click Here
           </a>
+        </div>
 
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/_mr.perfect20/" target="_blank" class="text-pink-500 hover:text-pink-700 transition-all duration-300 text-2xl">
-            <i class="fab fa-instagram"></i>
+        <!-- Link 2 -->
+        <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
+          <span class="text-cyan-300 font-semibold">Check Aadhar Validity</span>
+          <a href="https://myaadhaar.uidai.gov.in/check-aadhaar-validity/en" target="_blank"
+            class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
+            Click Here
           </a>
+        </div>
 
-          <!-- Email -->
-          <a href="https://wa.me/917000417423" target="_blank" class="text-green-500 hover:text-green-700 transition-all duration-300 text-2xl">
-            <i class="fab fa-whatsapp"></i>
+        <!-- Link 3 -->
+        <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
+          <span class="text-cyan-300 font-semibold">Download Samagra Parivar Card</span>
+          <a href="https://samagra.gov.in/Public/Dashboard/SamagraProfile.aspx?fw=sf" target="_blank"
+            class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
+            Click Here
+          </a>
+        </div>
+
+        <!-- Link 4 -->
+        <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
+          <span class="text-cyan-300 font-semibold">Check Domicile, Income, Cast Certificate</span>
+          <a href="#" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
+            Click Here
+          </a>
+        </div>
+
+        <!-- Link 5 -->
+        <div class="flex items-center justify-between bg-gray-800 p-3 rounded-lg hover:shadow transition">
+          <span class="text-cyan-300 font-semibold">Download Voter ID</span>
+          <a href="#" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition">
+            Click Here
           </a>
         </div>
       </div>
+
+      <!-- More Links Button -->
+      <div class="mt-6">
+        <a href="./all-links.html" target="_blank"
+          class="inline-block bg-cyan-300 text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-blue-900 hover:text-cyan-300 transition">
+          More Links →
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+
+  <!-- About Us  -->
+  <section id="about-us" class="w-full py-20 px-4 md:px-12">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center text-cyan-300">About Us</h2>
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <!-- Image -->
+        <img src="assets/img/personal-computer.png" alt="Cyber Cafe Setup"
+          class="w-full h-auto rounded-xl transition-transform duration-500 hover:scale-105" id="about-us-logo">
+
+        <!-- Text Content -->
+        <div>
+          <p class="text-lg leading-relaxed mb-4">
+            <strong>Always Online</strong> is your trusted cyber café and digital service center located in the heart of
+            your neighborhood. We offer a wide range of services including printing, scanning, online form filling, exam
+            registrations, ticket bookings, and more — all under one roof.
+          </p>
+          <p class="text-lg leading-relaxed mb-4">
+            Our mission is to make digital access easy, fast, and affordable for everyone. Whether you're applying for a
+            PAN card, printing important documents, or browsing the internet, we ensure smooth services and friendly
+            support.
+          </p>
+          <p class="text-lg leading-relaxed mb-6">
+            We believe in staying <strong>Always Online</strong> — not just in name, but in action. Visit us today to
+            experience the most reliable, customer-friendly digital café in town.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-6 mt-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/16iA9w17Ri/" target="_blank"
+              class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-2xl">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/_mr.perfect20/" target="_blank"
+              class="text-pink-500 hover:text-pink-700 transition-all duration-300 text-2xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="https://wa.me/917000417423" target="_blank"
+              class="text-green-500 hover:text-green-700 transition-all duration-300 text-2xl">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Contact Form -->
